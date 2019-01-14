@@ -36,6 +36,32 @@ If there is only one command you need to remenber it will be:
 
 ## Part one: Reference to Emacs Editor tutorial
 
+### move page
+`C-v`: next page
+`C-l[3]`: put the selected line at center, top, and bottom
+> `C-l` command can be used three times to position the selected line
+`M-v`: previous page
+
+### move cursor
+`C-f`: forward
+`C-b`: back
+`C-p`: previous line
+`C-n`: next line
+`C-a`: start of the line
+`C-e`: end of the line
+
+`M-f`: forward one word
+`M-b`: backward one word
+`M-a`: start of the sentence
+`M-e`: end of the sentence
+
+## Pro Tips
+### Numeric value
+`C-u` + `Number Key` + command: (`C-u` `8` `C-p`) move to 8th previous line. <Recommended>
+`M-` + `Number Key` + command: (`M-9` `C-n`) move to 9th next line.
+
+## Issues
+
 ### Issue **Mac** #1: For mac users, Meta key should be set to use emacs command.
 * Open Terminal and pull down the primary Terminal menu to choose “Preferences”
 * Under the “Profiles” section, find your default Terminal and click the “Keyboard” subsetting tab
