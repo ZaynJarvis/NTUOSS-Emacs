@@ -34,6 +34,14 @@ Every time has to force quite is a nightmare.
 If there is only one command you need to remenber it will be:
 `C-x C-c`: Type `Control + x` first and then `Control + c` to exit from emacs
 
+### Undo
+In case you did something wrong to an essential text. You do not want to force quit and take the risk that everything goes wrong.
+Use following command to undo your changes.
+They all behave the same use the available one in your terminal
+* `C-_`
+* `C-/`
+* `C-x` + `u`
+
 ## Part one: Reference to Emacs Editor tutorial
 
 ### move page
@@ -55,11 +63,38 @@ If there is only one command you need to remenber it will be:
 `M-a`: start of the sentence
 `M-e`: end of the sentence
 
+### deletion
+`<DEL>`: previous char (delete only)
+`C-d`: next char (delete only)
+`C-k`: to the end of the line (cut)
+
+`M-<DEL>`: previous word (cut)
+`M-D`: next word (cut)
+`M-k`: to the end of the sentence (cut)
+**cut is also called kill in emacs world**
+
+### paste (yank)
+`C-y`: yank last killed content
+`M-y`: swich to previous killed content in a **killed content loop**
+
+
 ## Pro Tips
 ### Numeric value
-`C-u` + `Number Key` + command: (`C-u` `8` `C-p`) move to 8th previous line. <Recommended>
-`M-` + `Number Key` + command: (`M-9` `C-n`) move to 9th next line.
-
+`C-u` + `Number Key` + command
+`M-` + `Number Key` + command
+* Case 1: move cursor
+ |----(`C-u` `8` `C-p`) move to 8th previous line. <Recommended>
+      (`M-9` `C-n`) move to 9th next line.
+* Case 2: move page 
+ |----(`C-u` `8` `C-v`) move page up by 8 lines.
+ |----(`C-u` `8` `M-v`) move page down by 8 lines.
+* Case 3: upper margin
+ |----(`C-u` `8` `C-l`) move the current line to the 8th line of the screen
+* Case 4: other command => Repeat same command by x times
+ |----(`C-u` `8` `*`) type `********`
+ |----(`C-u` `8` `<DEL>`) delete 8 chars
+ 
+  
 ## Issues
 
 ### Issue **Mac** #1: For mac users, Meta key should be set to use emacs command.
