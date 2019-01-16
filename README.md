@@ -77,6 +77,22 @@ They all behave the same use the available one in your terminal
 `C-y`: yank last killed content
 `M-y`: swich to previous killed content in a **killed content loop**
 
+### file
+`C-x` + `C-f` + `<FILE_NAME>`: Find a file
+`C-x` + `C-s`: save a file
+`C-x` + `C-b`: list buffers.
+`C-x` + `b`: switch buffer files.
+`C-x` + `s`: prompt to save all buffers
+
+### temporary exit and reload
+`C-z`: temporary exit from emacs
+```bash
+$> fg
+$> # or 
+$> %emacs
+```
+reload emacs process
+
 
 ## Pro Tips
 ### Numeric value
