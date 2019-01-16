@@ -98,15 +98,15 @@ reload emacs process
 ### Numeric value
 `C-u` + `Number Key` + command
 `M-` + `Number Key` + command
-* Case 1: move cursor
+1. move cursor
  - (`C-u` `8` `C-p`) move to 8th previous line. <Recommended>
  - (`M-9` `C-n`) move to 9th next line.
-* Case 2: move page 
+2. move page 
  - (`C-u` `8` `C-v`) move page up by 8 lines.
  - (`C-u` `8` `M-v`) move page down by 8 lines.
-* Case 3: upper margin
+3. upper margin
  - (`C-u` `8` `C-l`) move the current line to the 8th line of the screen
-* Case 4: other command => Repeat same command by x times
+4. other command => Repeat same command by x times
  - (`C-u` `8` `*`) type `********`
  - (`C-u` `8` `<DEL>`) delete 8 chars
  
