@@ -84,6 +84,13 @@ They all behave the same use the available one in your terminal
 `C-x` + `b`: switch buffer files.
 `C-x` + `s`: prompt to save all buffers
 
+### search
+1. `C-s`/`C-r`: start searching
+2. `put searched text`: increamental search
+3. `C-s`: next occuring string
+4. `<DEL>`: previous occuring string / delete string by 1 character
+5. `<RETURN>`: end search
+
 ### temporary exit and reload
 `C-z`: temporary exit from emacs
 ```bash
@@ -92,6 +99,11 @@ $> # or
 $> %emacs
 ```
 reload emacs process
+
+### change mode
+`M-x` + `<MODE_NAME>`: (For major modes) e.g. `M-x` + `text-mode`
+`C-h` + `m`: open help menu for modes
+`M-x` + `<MODE_NAME>`: (For minor modes) toggle minor modes e.g. `M-x` + `line-number-mode`
 
 
 ## Pro Tips
