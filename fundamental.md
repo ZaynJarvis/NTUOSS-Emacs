@@ -128,6 +128,11 @@ reload emacs process
 - `C-h` + `m`: open help menu for modes
 - `M-x` + `<MODE_NAME>`: (For minor modes) toggle minor modes e.g. `M-x` + `line-number-mode`
 
+### windows (frames)
+* `C-x <NUMBER>`: create multiple windows
+* `C-x` + `o`: change cursor to other window
+* `C-M-v`: next page for other window
+
 ## Pro Tips
 
 ### Numeric value
