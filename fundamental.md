@@ -147,6 +147,27 @@ reload emacs process
    - (`C-u` `8` `*`) type `********`
    - (`C-u` `8` `<DEL>`) delete 8 chars
 
+### installing packages
+
+In this section we will install markdown mode as a example to install new packages and make use of them.
+1. add following content into `~/.emacs` file
+	```lisp
+	(require 'package)                                       
+	(add-to-list 'package-archives                           
+	             '("melpa" . "http://melpa.org/packages/") t)
+	(package-initialize)                                     
+	```
+2. reopen emacs
+3. run command in emacs `M-x package-refresh-contents`
+4. run command `M-x package-install <RETURN>` + `markdown-mode <RETURN>`
+5. `C-x C-f fundamental.md`
+6. Now you should be viewing markdown file in markdown mode
+7. Go for the document [here](https://github.com/jrblevin/markdown-mode)
+
+### Others
+* play with org mode
+* open shell with `M-x shell`
+
 ## Issues
 
 ### Issue **Mac** #1: For mac users, Meta key should be set to use emacs command.
@@ -154,4 +175,5 @@ reload emacs process
 - Open Terminal and pull down the primary Terminal menu to choose “Preferences”
 - Under the “Profiles” section, find your default Terminal and click the “Keyboard” subsetting tab
 - Check the little box for “Use option as meta key” at the bottom of the window
-- [reference](http://osxdaily.com/2013/02/01/use-option-as-meta-key-in-mac-os-x-terminal/)
+- [reference]（https://github.com/jrblevin/markdown-mode)
+
