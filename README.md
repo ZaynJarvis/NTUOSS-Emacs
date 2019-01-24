@@ -1,25 +1,10 @@
 # NTUOSS-Vim-Emacs
 
-This is a repository to try Vim and Emacs for my next TGIFHacks event.
-From the start of this semester, I will try my best to devote half an hour (sounds like a good leisure time) to learn about Vim and Emacs, and hopefully record my learnings and better prepared for 2019 TGIFHacks fully.
-As time went by this README.md may be editted on emacs fully. I do hope that I will truly appreciate and make full use of Vim and Emacs.
+This is a repository to try Emacs for Feb. 8th TGIFHacks event.
+From the start of this semester, I will try my best to devote half an hour (sounds like a good leisure time) to learn about Emacs, and hopefully record my learnings and better prepared for 2019 TGIFHacks fully.
+As time went by this README.md may be editted on emacs fully. I do hope that I will truly appreciate and make full use of Emacs.
 
-# Vim
-
-> As I am already using Vim, I will fullfill this section later when I am available to learn fully (not fully but in a more comprehensive sense) about Vim.
-
-### Exit from Vim
-
-`Do you want to terminate running processes in this window?`
-Every time has to force quite is a nightmare.
-If there is only one (two) command you need to remenber for Vim it will be:
-`:wq` type `:` followed by `w` and `q`
-`w` means save
-`q` means quit
-
-> In some case you may not be able to write the file since you do not pocess certern priviledge, you will need to type `:q!`, which stands for discard all changes and force quit.
-
-# Emacs
+# Getting Started
 
 ## Installing Emacs
 
