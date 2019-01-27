@@ -1,164 +1,104 @@
-# NTUOSS-Vim-Emacs
+# NTUOSS Emacs Workshop
 
-This is a repository to try Emacs for Feb. 8th TGIFHacks event.
-From the start of this semester, I will try my best to devote half an hour (sounds like a good leisure time) to learn about Emacs, and hopefully record my learnings and better prepared for 2019 TGIFHacks fully.
-As time went by this README.md may be editted on emacs fully. I do hope that I will truly appreciate and make full use of Emacs.
+**by [Zayn Jarvis](https://github.com/ZaynJarvis) from [NTU Open Source Society](https://www.ntuoss.com)**
 
-# Getting Started
+![](http://spacemacs.org/img/screenshots/ss1.png)
 
-## Installing Emacs
+Artwork by ...
 
-> Mac has emacs pre-installed but the version is 22, and the version at the time is 26. Mac user can choose to update or not.
+---
 
-- `Windows` It seems that windows user has to install a seperate Emacs app. I will explore more on whether emacs works on bash version of windows when I get to that point. [reference](http://gnu.c3sl.ufpr.br/ftp/emacs/)
-- `Mac` I update my emacs version from a third party repo. And it works fine. User need to have homebrew installed. [reference](https://github.com/railwaycat/homebrew-emacsmacport)
-- `Linux` Installation is the same as windows install. I will check if the same method also apply to Linux. (I do believe some Linux distro should have Emacs pre-installed already.) [reference](http://gnu.c3sl.ufpr.br/ftp/emacs/)
+### Workshop Details
 
-## Essential Operation Instruction:
+**When**: Friday, 8 Feb. 2019. 6:30 PM - 8:30 PM.
+**Where**: LT1, NTU North Spine Plaza
+**Who**: NTU Open Source Society
 
-### Key alias explanation
+**Questions**: We will be hosting a Pigeon Hole Live for collecting questions regarding the workshop.
 
-- `C-` for Holding Control.
-- `M-` for Holding Meta Key (META EDIT ALT key) for mac users it is option key and has to be configured according to issue #1.
-- `s-` referencing to super key which is command key for mac (only?).
+Feedback & Error Reports: We will send out the link for collecting feedback as usual. ​For further discussion or cooperation please contact @ [zaynjarvis@gmail.com](zaynjarvis@gmail.com).
 
-### Exit from emacs
+**_Disclaimer: This workshop is for educational purposes only. The workshop structure is inspired by Emacs official tutorial. No prototype or outcome of any type is intended for commercial use._**
 
-`Do you want to terminate running processes in this window?`
-Every time has to force quite is a nightmare.
-If there is only one command you need to remenber it will be:
+---
 
-- `C-x C-c`: Type `Control + x` first and then `Control + c` to exit from emacs
+### Agenda
+* Introduction to extensible editor: EMACS
+    * Use case:
+    * Key differences:
+* Basic command practice with EMACS
+    * File system navigation
+    * move cursor
+    * edit files
+    * search
+    * open multiple windows
+* Introduction of build-in packages system ELPA
+* Download external packages with MELPA
+    * edit configuration files
+    * understand configuration files
+* A taste of org mode of EMACS
+    * open org mode file
+    * read org mode manual and try out org mode
 
-### Undo
+---
 
-In case you did something wrong to an essential text. You do not want to force quit and take the risk that everything goes wrong.
-Use following command to undo your changes.
-They all behave the same use the available one in your terminal
+## Introduction
 
-- `C-_`
-- `C-/`
-- `C-x` + `u`
+EMACS is an editor with plugin system that can
 
-## Part one: Reference to Emacs Editor tutorial
+1. run in bash (terminal)
+2. customize anything (UI and functionality)
+3. get rid of mouse (kick-ass programmer loves that)
+4. be an IDE
+5. be a file manager
+6. be a browser
+7. and many more...
 
-### move page
+For more detailed information you can go for the reference [here](https://batsov.com/articles/2011/11/19/why-emacs/)
 
-- `C-v`: next page
-- `M-v`: previous page
-- `C-l`: command can be used three times to position the selected line
-  > put the selected line at center, top, and bottom
+![](https://imgs.xkcd.com/comics/real_programmers.png)
 
-### move cursor
+## Getting Started
 
-- `C-f`: forward
-- `C-b`: back
-- `C-p`: previous line
-- `C-n`: next line
-- `C-a`: start of the line
-- `C-e`: end of the line
+### Installing Emacs
 
-- `M-f`: forward one word
-- `M-b`: backward one word
-- `M-a`: start of the sentence
-- `M-e`: end of the sentence
-
-### deletion
-
-- `<DEL>`: previous char (delete only)
-- `C-d`: next char (delete only)
-- `C-k`: to the end of the line (cut)
-
-- `M-<DEL>`: previous word (cut)
-- `M-D`: next word (cut)
-- `M-k`: to the end of the sentence (cut)
-  **cut is also called kill in emacs world**
-
-### paste (yank)
-
-- `C-y`: yank last killed content
-- `M-y`: swich to previous killed content in a **killed content loop**
-
-### file
-
-- `C-x` + `C-f` + `<FILE_NAME>`: Find a file
-- `C-x` + `C-s`: save a file
-- `C-x` + `C-b`: list buffers.
-- `C-x` + `b`: switch buffer files.
-- `C-x` + `s`: prompt to save all buffers
-
-### search
-
-1. `C-s`/`C-r`: start searching
-2. `put searched text`: increamental search
-3. `C-s`: next occuring string
-4. `<DEL>`: previous occuring string / delete string by 1 character
-5. `<RETURN>`: end search
-
-### temporary exit and reload
-
-- `C-z`: temporary exit from emacs
-
+- `Windows` It seems that windows user has to install a seperate Emacs app. I will explore more on whether emacs works on bash version of windows when I get to that point. [reference](http://mirror.us-midwest-1.nexcess.net/gnu/emacs/windows/emacs-26/)
+- `Mac` I update my emacs version from a third party repo. And it works fine. User need to have homebrew installed. [reference](https://github.com/railwaycat/homebrew-emacsmacport)  
+> Mac has emacs pre-installed but the version is 22, and the version at the time is 26. Mac user can choose to update or not.  
 ```bash
-$> fg
-$> # or
-$> %emacs
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+$ brew tap railwaycat/emacsmacport
+$ brew install emacs-mac
+```  
+> When copying commands do not copy the `$` sign. It is a command prompt sign! I add it in purpose to show you that it is a common indicator.
+- `Linux` Since Linux has the same bash environment as Mac, you can install emacs with the following command. [reference](https://medium.com/@zaynjarvis/setting-up-tensorflow-server-with-docker-part-2-d48bef8976d5)  
+```bash
+sudo apt-get update && sudo apt install emacs
+```  
+```bash
+$ sudo add-apt-repository ppa:kelleyk/emacs && sudo apt-get update && sudo apt install emacs26
 ```
-
-reload emacs process
-
-### change mode
-
-- `M-x` + `<MODE_NAME>`: (For major modes) e.g. `M-x` + `text-mode`
-- `C-h` + `m`: open help menu for modes
-- `M-x` + `<MODE_NAME>`: (For minor modes) toggle minor modes e.g. `M-x` + `line-number-mode`
-
-### windows (frames)
-* `C-x <NUMBER>`: create multiple windows
-* `C-x` + `o`: change cursor to other window
-* `C-M-v`: next page for other window
-
-## Pro Tips
-
-### Numeric value
-
-- `C-u` + `Number Key` + command
-- `M-` + `Number Key` + command
-
-1. move cursor
-   - (`C-u` `8` `C-p`) move to 8th previous line. <Recommended>
-   - (`M-9` `C-n`) move to 9th next line.
-2. move page
-   - (`C-u` `8` `C-v`) move page up by 8 lines.
-   - (`C-u` `8` `M-v`) move page down by 8 lines.
-3. upper margin
-   - (`C-u` `8` `C-l`) move the current line to the 8th line of the screen
-4. other command => Repeat same command by x times
-   - (`C-u` `8` `*`) type `********`
-   - (`C-u` `8` `<DEL>`) delete 8 chars
+- `Online` In case you cannot set up Emacs properly in your machine, you may visit [an online emacs editor](https://www.rollapp.com/) for this workshop. And try to set up your own machine later.
 
 ### installing packages
 
 In this section we will install markdown mode as a example to install new packages and make use of them.
+
 1. add following content into `~/.emacs` file
-	```lisp
-	(require 'package)                                       
-	(add-to-list 'package-archives                           
-	             '("melpa" . "http://melpa.org/packages/") t)
-	(package-initialize)                                     
-	```
+   ```lisp
+   (require 'package)
+   (add-to-list 'package-archives
+                '("melpa" . "http://melpa.org/packages/") t)
+   (package-initialize)
+   ```
 2. reopen emacs
 3. run command in emacs `M-x package-refresh-contents`
-4. run command `M-x package-install <RETURN>` + `markdown-mode <RETURN>`
+4. run command `M-x package-install <RETURN> markdown-mode <RETURN>`
 5. `C-x C-f fundamental.md`
 6. Now you should be viewing markdown file in markdown mode
 7. Go for the document [here](https://github.com/jrblevin/markdown-mode)
 
-### Others
-* play with org mode
-* open shell with `M-x shell`
-
-## Issues
+# Issues
 
 ### Issue **Mac** #1: For mac users, Meta key should be set to use emacs command.
 
@@ -166,4 +106,3 @@ In this section we will install markdown mode as a example to install new packag
 - Under the “Profiles” section, find your default Terminal and click the “Keyboard” subsetting tab
 - Check the little box for “Use option as meta key” at the bottom of the window
 - [reference]（https://github.com/jrblevin/markdown-mode)
-
