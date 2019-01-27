@@ -1,6 +1,7 @@
 ## Essential Operation Instruction:
 
 ### Key alias explanation
+
 | Command | Description |
 | :---: | --- |
 | `C-` | for Holding Control. |
@@ -28,7 +29,8 @@ They all behave the same use the available one in your terminal
 
 ## Part one: Reference to Emacs Editor tutorial
 
-### move page
+### Move page
+
 | Command | Description |
 | :---: | --- |
 | `C-v` | next page |
@@ -36,7 +38,8 @@ They all behave the same use the available one in your terminal
 | `C-l` | command can be used three times to position the selected line |
   > put the selected line at center, top, and bottom
 
-### move cursor
+### Move cursor
+
 | Command | Description |
 | :---: | --- |
 | `C-f` | forward |
@@ -50,7 +53,7 @@ They all behave the same use the available one in your terminal
 | `M-a` | start of the sentence |
 | `M-e` | end of the sentence |
 
-### cut and paste
+### Cut and paste
 
 | Command | Description |
 | :---: | --- |
@@ -63,7 +66,7 @@ They all behave the same use the available one in your terminal
 | `C-y` | yank last killed content |
 | `M-y` | swich to previous killed content in a **killed content loop** |
 
-### file
+### File
 
 | Command | Description |
 | :---: | --- |
@@ -73,7 +76,7 @@ They all behave the same use the available one in your terminal
 | `C-x b` | switch buffer files |
 | `C-x s` | prompt to save all buffers |
 
-### search
+### Search
 
 1. `C-s`/`C-r`: start searching
 2. `put searched text`: increamental search
@@ -81,14 +84,14 @@ They all behave the same use the available one in your terminal
 4. `<DEL>`: previous occuring string / delete string by 1 character
 5. `<RETURN>`: end search
 
-### change mode
+### Change mode
 
 | Command | Description |
 | :---: | --- |
 | `M-x <MODE_NAME>` | (For major modes) e.g. `M-x text-mode` |
 | `C-h m` | open help menu for modes |
 
-### windows (frames)
+### Windows (frames)
 
 | Command | Description |
 | :---: | --- |
@@ -117,7 +120,7 @@ They all behave the same use the available one in your terminal
 | (`C-u` `8` `*`) | type `********` |
 | (`C-u` `8` `<DEL>`) | delete 8 chars |
 
-### installing packages
+### Installing packages
 
 In this section we will install markdown mode as a example to install new packages and make use of them.
 
