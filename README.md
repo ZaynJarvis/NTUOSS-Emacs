@@ -23,18 +23,18 @@ Feedback & Error Reports: We will send out the link for collecting feedback as u
 ---
 
 ### Agenda
-* [Introduction to Emacs](#introduction-to-emacs)
+* [Introduction to Emacs](#introduction)
 * [Installation](#installation)
     * Clone the repo
     * Install Emacs
-* [Emacs Essential](#emacs-essential)
+* [Emacs Essential](#basic-tutorial)
     * Alias Explanation
     * Open & Close Emacs
     * Cursor Movement
     * Windows (frames)
     * File Editing
     * Search
-* [Emacs Advanced Guide](#emacs-advanced-guide)
+* [Emacs Advanced Guide](#advanced-guide)
     * Set Default Editor
     * Numeric Value
     * Install packages
