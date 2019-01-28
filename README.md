@@ -8,7 +8,6 @@ Artwork by ...
 
 ---
 
-
 | Workshop Details |                                                                                       |
 | :---:            | ---                                                                                   |
 | When             | Friday, 8 Feb. 2019. 6:30 PM - 8:30 PM                                                |
@@ -21,26 +20,27 @@ Feedback & Error Reports: We will send out the link for collecting feedback as u
 
 **_Disclaimer: This workshop is for educational purposes only. The workshop structure is inspired by Emacs official tutorial. No prototype or outcome of any type is intended for commercial use._**
 
-
 ---
 
 ### Agenda
-* Introduction to extensible editor: EMACS
-    * Use case
-    * Key differences
-* Basic command practice with EMACS
-    * File system navigation
-    * move cursor
-    * edit files
-    * search
-    * open multiple windows
-* Introduction of build-in packages system ELPA
-* Download external packages with MELPA
-    * edit configuration files
-    * understand configuration files
-* A taste of org mode of EMACS
-    * open org mode file
-    * read org mode manual and try out org mode
+* [Introduction to Emacs](#introduction-to-emacs)
+* [Installation](#installation)
+    * Clone the repo
+    * Install Emacs
+* [Emacs Essential](#emacs-essential)
+    * Alias Explanation
+    * Open & Close Emacs
+    * Cursor Movement
+    * Windows (frames)
+    * File Editing
+    * Search
+* [Emacs Advanced Guide](#emacs-advanced-guide)
+    * Set Default Editor
+    * Numeric Value
+    * Install packages
+    * Change Mode
+* [Issues](#issues)
+* [End Notes](#end-notes)
 
 ---
 
@@ -92,7 +92,7 @@ $ sudo add-apt-repository ppa:kelleyk/emacs && sudo apt-get update && sudo apt i
 
 ## BASIC TUTORIAL
 
-### Alias explanation
+### Alias Explanation
 
 | Command | Description                                                                         |
 | :---:   | ---                                                                                 |
@@ -176,7 +176,7 @@ Then type `C-h t` to go to the tutorial page.
 
 ## ADVANCED GUIDES
 
-### Set Emacs as default
+### Set Default Editor
 
 Paste the following line into your `~/.bashrc`
 
@@ -192,7 +192,7 @@ echo "export EDITOR=\"emacs\"" >> ~/.bashrc && source ./bashrc
 
 By doing this, for example, you can edit your git merge message with emacs by default.
 
-### Numeric value
+### Numeric Value
 
 - `C-u <Number>` + command
 - `M-<Number>` + command
@@ -211,7 +211,7 @@ By doing this, for example, you can edit your git merge message with emacs by de
 | `C-u 8 *`                      | type `********`                                     |
 | `C-u 8 <DEL>`                  | delete 8 chars                                      |
 
-### Installing packages
+### Install packages
 
 In this section we will install markdown mode as a example to install new packages and make use of them.
 
@@ -229,7 +229,7 @@ In this section we will install markdown mode as a example to install new packag
 6. Now you should be viewing markdown file in markdown mode
 7. Go for the document [here](https://github.com/jrblevin/markdown-mode)
 
-### Change mode
+### Change Mode
 
 | Command           | Description                            |
 | :---:             | ---                                    |
