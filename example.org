@@ -141,10 +141,10 @@ reload emacs process
 In this section we will install markdown mode as a example to install new packages and make use of them.
 1. add following content into `~/.emacs` file
 	```lisp
-	(require 'package)                                       
-	(add-to-list 'package-archives                           
+	(require 'package)
+	(add-to-list 'package-archives
 	             '("melpa" . "http://melpa.org/packages/") t)
-	(package-initialize)                                     
+	(package-initialize)
 	```
 2. reopen emacs
 3. run command in emacs `M-x package-refresh-contents`
@@ -165,4 +165,3 @@ In this section we will install markdown mode as a example to install new packag
 - Under the “Profiles” section, find your default Terminal and click the “Keyboard” subsetting tab
 - Check the little box for “Use option as meta key” at the bottom of the window
 - [reference]（https://github.com/jrblevin/markdown-mode)
-
