@@ -8,16 +8,19 @@ Artwork by ...
 
 ---
 
+
 | Workshop Details |                                                                                       |
-| :---:            |                                                                                       |
+| :---:            | ---                                                                                   |
 | When             | Friday, 8 Feb. 2019. 6:30 PM - 8:30 PM                                                |
 | Where            | LT1, NTU North Spine Plaza                                                            |
 | Who              | NTU Open Source Society                                                               |
 | Questions        | We will be hosting a Pigeon Hole Live for collecting questions regarding the workshop |
 
+
 Feedback & Error Reports: We will send out the link for collecting feedback as usual. ​For further discussion or cooperation please contact @ [zaynjarvis@gmail.com](zaynjarvis@gmail.com).
 
 **_Disclaimer: This workshop is for educational purposes only. The workshop structure is inspired by Emacs official tutorial. No prototype or outcome of any type is intended for commercial use._**
+
 
 ---
 
