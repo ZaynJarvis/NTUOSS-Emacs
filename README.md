@@ -2,9 +2,9 @@
 
 **by [Zayn Jarvis](https://github.com/ZaynJarvis) from [NTU Open Source Society](https://www.ntuoss.com)**
 
-![](http://spacemacs.org/img/screenshots/ss1.png)
+![artwork](https://firebasestorage.googleapis.com/v0/b/hackoss.appspot.com/o/images%2Fartworks%2F92_Emacs.png?alt=media&token=3acba1bc-4fa7-419b-b945-43d1fbf4603f)
 
-Artwork by ...
+Artwork by Chuan Bin
 
 ---
 
